@@ -306,6 +306,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -463,13 +476,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a><br>环境检查：<br>git version  （git –version）<br>node -v<br>npm -v<br>hexo -v<br>==================<br>配置Git<br>git config –global user.name “xxx”<br>git config –global user.email “<a href="mailto:&#x78;&#120;&#120;&#64;&#97;&#97;&#x61;&#46;&#x63;&#111;&#109;">&#x78;&#120;&#120;&#64;&#97;&#97;&#x61;&#46;&#x63;&#111;&#109;</a>“<br>==============<br>配置SSH<br>ssh-keygen -t rsa -C “<a href="mailto:&#120;&#x78;&#120;&#64;&#97;&#x61;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">&#120;&#x78;&#120;&#64;&#97;&#x61;&#x61;&#x2e;&#x63;&#x6f;&#x6d;</a>“ （三个回车）<br>检查：ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;</a><br>显示：Hi ok36! You’ve successfully authenticated, but GitHub does not provide shell access.<br>将密钥放入仓库<br>===================</p>
+                <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a><br>环境检查：<br>git version  （git –version）<br>node -v<br>npm -v<br>hexo -v<br>==================<br>配置Git<br>git config –global user.name “xxx”<br>git config –global user.email “<a href="mailto:&#120;&#x78;&#120;&#x40;&#97;&#97;&#97;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x78;&#120;&#x40;&#97;&#97;&#97;&#x2e;&#x63;&#111;&#x6d;</a>“<br>==============<br>配置SSH<br>ssh-keygen -t rsa -C “<a href="mailto:&#120;&#x78;&#x78;&#64;&#x61;&#x61;&#x61;&#x2e;&#99;&#111;&#x6d;">&#120;&#x78;&#x78;&#64;&#x61;&#x61;&#x61;&#x2e;&#99;&#111;&#x6d;</a>“ （三个回车）<br>检查：ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a><br>显示：Hi ok36! You’ve successfully authenticated, but GitHub does not provide shell access.<br>将密钥放入仓库<br>===================</p>
 <p>使用淘宝镜像下载 cnpm:<br>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>cnpm -v</p>
 <p>npm - 换淘宝源<br>npm install -g npm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>$ npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a>   (ok)</p>
 <p>执行下面的命令，确认是否切换成功。<br>$ npm config get registry</p>
 <p>修改源地址为淘宝 NPM 镜像<br>npm config set registry <a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org/</a><br>修改源地址为官方源<br>npm config set registry <a target="_blank" rel="noopener" href="https://registry.npmjs.org/">https://registry.npmjs.org/</a><br>=========================================</p>
-<p>安转了node之后，就可以使用以下命令来安装hexo：<br>npm install -g hexo-cli       (npm install hexo-cli -g)<br>成功:  + <a href="mailto:&#104;&#101;&#120;&#111;&#45;&#x63;&#x6c;&#x69;&#x40;&#52;&#x2e;&#x32;&#x2e;&#x30;">&#104;&#101;&#120;&#111;&#45;&#x63;&#x6c;&#x69;&#x40;&#52;&#x2e;&#x32;&#x2e;&#x30;</a><br>=======================<br>配置部署插件<br>npm install hexo –save<br>成功:  （显示：+ <a href="mailto:&#104;&#101;&#x78;&#x6f;&#64;&#53;&#46;&#50;&#x2e;&#x30;">&#104;&#101;&#x78;&#x6f;&#64;&#53;&#46;&#50;&#x2e;&#x30;</a>）<br>当前目录下生成文件夹 node_modules 和 文件 package-lock.json</p>
-<p>上传命令需要安装hexo-deployer-git插件<br>npm install hexo-deployer-git –save  （显示：+ <a href="mailto:&#x68;&#101;&#120;&#111;&#45;&#x64;&#101;&#x70;&#108;&#x6f;&#x79;&#101;&#x72;&#x2d;&#103;&#x69;&#116;&#64;&#50;&#46;&#49;&#x2e;&#48;">&#x68;&#101;&#120;&#111;&#45;&#x64;&#101;&#x70;&#108;&#x6f;&#x79;&#101;&#x72;&#x2d;&#103;&#x69;&#116;&#64;&#50;&#46;&#49;&#x2e;&#48;</a>）<br>当前目录下生成文件夹 node_modules 和 文件 package-lock.json</p>
+<p>安转了node之后，就可以使用以下命令来安装hexo：<br>npm install -g hexo-cli       (npm install hexo-cli -g)<br>成功:  + <a href="mailto:&#x68;&#x65;&#120;&#111;&#45;&#x63;&#108;&#x69;&#x40;&#x34;&#x2e;&#x32;&#x2e;&#x30;">&#x68;&#x65;&#120;&#111;&#45;&#x63;&#108;&#x69;&#x40;&#x34;&#x2e;&#x32;&#x2e;&#x30;</a><br>=======================<br>配置部署插件<br>npm install hexo –save<br>成功:  （显示：+ <a href="mailto:&#104;&#x65;&#x78;&#111;&#x40;&#53;&#46;&#x32;&#x2e;&#48;">&#104;&#x65;&#x78;&#111;&#x40;&#53;&#46;&#x32;&#x2e;&#48;</a>）<br>当前目录下生成文件夹 node_modules 和 文件 package-lock.json</p>
+<p>上传命令需要安装hexo-deployer-git插件<br>npm install hexo-deployer-git –save  （显示：+ <a href="mailto:&#x68;&#101;&#x78;&#111;&#45;&#x64;&#101;&#112;&#108;&#x6f;&#x79;&#101;&#x72;&#x2d;&#x67;&#x69;&#x74;&#64;&#x32;&#46;&#x31;&#x2e;&#48;">&#x68;&#101;&#x78;&#111;&#45;&#x64;&#101;&#112;&#108;&#x6f;&#x79;&#101;&#x72;&#x2d;&#x67;&#x69;&#x74;&#64;&#x32;&#46;&#x31;&#x2e;&#48;</a>）<br>当前目录下生成文件夹 node_modules 和 文件 package-lock.json</p>
 <p>===============================<br>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。<br>$ hexo init <folder>   (初始化数据)<br>$ cd <folder><br>$ npm install   (安装依赖)<br>新建完成后，指定文件夹的目录如下：<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br> |   ├── _drafts<br> |   └── _posts<br>└── themes</p>
 <p>===================================</p>
 <p>_config.yml 网站的 配置 信息</p>
