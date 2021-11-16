@@ -4,8 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="....., 夏承磊">
-    <meta name="description" content="..... | 夏承磊">
+    <meta name="keywords" content="c++实例, 夏承磊">
+    <meta name="description" content="使用 C++ 获取用户的输入两个数字，并将两个数字相加，然后输出到屏幕：
+#include &amp;lt;iostream&gt;
+using namespace std;
+ 
+int main()
+&amp;amp;#123;
+    int firstNu">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>..... | 夏承磊</title>
+    <title>c++实例 | 夏承磊</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -215,12 +221,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://z3.ax1x.com/2021/11/11/IwarY4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://z3.ax1x.com/2021/11/11/IwaOnP.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">.....</h1>
+                    <h1 class="description center-align post-title">c++实例</h1>
                 </div>
             </div>
         </div>
@@ -334,29 +340,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
-                                <span class="chip bg-color">计算机</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">
-                                <span class="chip bg-color">练习题</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%88%86%E7%B1%BB/" class="post-category">
-                                分类
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -379,7 +368,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    331
                 </div>
                 
 
@@ -406,7 +395,85 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>使用 C++ 获取用户的输入两个数字，并将两个数字相加，然后输出到屏幕：</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> firstNumber<span class="token punctuation">,</span> secondNumber<span class="token punctuation">,</span> sumOfTwoNumbers<span class="token punctuation">;</span>
+    
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入两个整数: "</span><span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> firstNumber <span class="token operator">>></span> secondNumber<span class="token punctuation">;</span>
+ 
+    <span class="token comment" spellcheck="true">// 相加</span>
+    sumOfTwoNumbers <span class="token operator">=</span> firstNumber <span class="token operator">+</span> secondNumber<span class="token punctuation">;</span>
+ 
+    <span class="token comment" spellcheck="true">// 输出</span>
+    cout <span class="token operator">&lt;&lt;</span> firstNumber <span class="token operator">&lt;&lt;</span> <span class="token string">" + "</span> <span class="token operator">&lt;&lt;</span>  secondNumber <span class="token operator">&lt;&lt;</span> <span class="token string">" = "</span> <span class="token operator">&lt;&lt;</span> sumOfTwoNumbers<span class="token punctuation">;</span>     
+ 
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>使用两种方法来交换两个变量：使用临时变量与不使用临时变量。</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> temp<span class="token punctuation">;</span>
+ 
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"交换之前："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+ 
+    temp <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+    b <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+ 
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"\n交换之后："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>以上程序执行输出结果为：</p>
+<pre class=" language-cpp"><code class="language-cpp">交换之前：
+a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span>
+
+交换之后：
+a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">5</span>
+</code></pre>
+<pre class=" language-cpp"><code class="language-cpp">不使用临时变量
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+ 
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"交换之前："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+ 
+    a <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+    b <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+    a <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+ 
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"\n交换之后："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>以上程序执行输出结果为：</p>
+<pre class=" language-cpp"><code class="language-cpp">交换之前：
+a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span>
+
+交换之后：
+a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">5</span>
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -432,7 +499,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xcl236.github.io/xcl236/1d3cd17c.html">https://xcl236.github.io/xcl236/1d3cd17c.html</a>
+                    <a href="https://xcl236.github.io/xcl236/6bcf31ac.html">https://xcl236.github.io/xcl236/6bcf31ac.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -469,15 +536,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
-                                    <span class="chip bg-color">计算机</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">
-                                    <span class="chip bg-color">练习题</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -647,16 +706,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/xcl236/c783f2ce.html">
+                <a href="/xcl236/6bcf31ac.html">
                     <div class="card-image">
                         
-                        <img src="https://z3.ax1x.com/2021/11/11/IwarY4.jpg" class="responsive-img" alt="计算机基础">
+                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="c++实例">
                         
-                        <span class="card-title">计算机基础</span>
+                        <span class="card-title">c++实例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -666,9 +726,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -677,6 +737,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -687,12 +748,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/xcl236/d2f66bff.html">
+                <a href="/xcl236/6bcf31ad.html">
                     <div class="card-image">
                         
-                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="计算机网络文章">
+                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="计算机基础知识">
                         
-                        <span class="card-title">计算机网络文章</span>
+                        <span class="card-title">计算机基础知识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
