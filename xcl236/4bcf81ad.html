@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="c++实例, 夏承磊">
-    <meta name="description" content="使用 C++ 获取用户的输入两个数字，并将两个数字相加，然后输出到屏幕：
-#include &amp;lt;iostream&gt;
-using namespace std;
- 
-int main()
-&amp;amp;#123;
-    int firstNu">
+    <meta name="keywords" content="交换机设置远程登陆密码, 夏承磊">
+    <meta name="description" content="
+Switch&gt;en      //进入特权模式
+Switch#conf t    //进入全局模式
+Switch(config)#int vlan 1      //进入 vlan 1
+Switch(config-if)#no shu  ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +21,7 @@ int main()
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>c++实例 | 夏承磊</title>
+    <title>交换机设置远程登陆密码 | 夏承磊</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -227,7 +225,7 @@ int main()
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">c++实例</h1>
+                    <h1 class="description center-align post-title">交换机设置远程登陆密码</h1>
                 </div>
             </div>
         </div>
@@ -362,14 +360,14 @@ int main()
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-16
+                    2021-11-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    331
+                    216
                 </div>
                 
 
@@ -396,84 +394,29 @@ int main()
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用 C++ 获取用户的输入两个数字，并将两个数字相加，然后输出到屏幕：</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
- 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> firstNumber<span class="token punctuation">,</span> secondNumber<span class="token punctuation">,</span> sumOfTwoNumbers<span class="token punctuation">;</span>
-    
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入两个整数: "</span><span class="token punctuation">;</span>
-    cin <span class="token operator">>></span> firstNumber <span class="token operator">>></span> secondNumber<span class="token punctuation">;</span>
- 
-    <span class="token comment" spellcheck="true">// 相加</span>
-    sumOfTwoNumbers <span class="token operator">=</span> firstNumber <span class="token operator">+</span> secondNumber<span class="token punctuation">;</span>
- 
-    <span class="token comment" spellcheck="true">// 输出</span>
-    cout <span class="token operator">&lt;&lt;</span> firstNumber <span class="token operator">&lt;&lt;</span> <span class="token string">" + "</span> <span class="token operator">&lt;&lt;</span>  secondNumber <span class="token operator">&lt;&lt;</span> <span class="token string">" = "</span> <span class="token operator">&lt;&lt;</span> sumOfTwoNumbers<span class="token punctuation">;</span>     
- 
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>使用两种方法来交换两个变量：使用临时变量与不使用临时变量。</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
- 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> temp<span class="token punctuation">;</span>
- 
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"交换之前："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
- 
-    temp <span class="token operator">=</span> a<span class="token punctuation">;</span>
-    a <span class="token operator">=</span> b<span class="token punctuation">;</span>
-    b <span class="token operator">=</span> temp<span class="token punctuation">;</span>
- 
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"\n交换之后："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
- 
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>以上程序执行输出结果为：</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp">交换之前：
-a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span>
+                <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IIHgT1"><img src="https://z3.ax1x.com/2021/11/18/IIHgT1.png" alt="交换机远程登陆.png"></a></p>
+<pre class="line-numbers language-bash"><code class="language-bash">Switch<span class="token operator">></span>en      //进入特权模式
+Switch<span class="token comment" spellcheck="true">#conf t    //进入全局模式</span>
+Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#int vlan 1      //进入 vlan 1</span>
+Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#no shu  //开启</span>
+%LINK-5-CHANGED: Interface Vlan1, changed state to up
 
-交换之后：
-a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">5</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-cpp"><code class="language-cpp">不使用临时变量
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
- 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    
-    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
- 
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"交换之前："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
- 
-    a <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
-    b <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
-    a <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
- 
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"\n交换之后："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"a = "</span> <span class="token operator">&lt;&lt;</span> a <span class="token operator">&lt;&lt;</span> <span class="token string">", b = "</span> <span class="token operator">&lt;&lt;</span> b <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
- 
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>以上程序执行输出结果为：</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp">交换之前：
-a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span>
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
 
-交换之后：
-a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">5</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#ip address 192.168.1.254 255.255.255.0    //配置IP地址和子网掩码</span>
+Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#exit   //退回全局模式</span>
+Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#line vty 0 4   //为telnet用户设置0~4共5条线路</span>
+Switch<span class="token punctuation">(</span>config-line<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#login local   //设置本地登陆</span>
+Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#username xcl password 123  //设置本地账户名和密码</span>
+Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#enable password 222    //设置进入特权模式的明文密码为222</span>
+Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#enable secret 333     设置进入特权模式的加密密码为333</span>
+验证在命令提示符下输入telnet 192.168.1.254
+Username:         （输入用户名<span class="token punctuation">)</span>
+Password:         （输入用户名密码）
+Switch<span class="token operator">></span>en
+Password:          （输入进入特权模式的密码）
+Switch<span class="token comment" spellcheck="true">#             </span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -500,7 +443,7 @@ a <span class="token operator">=</span> <span class="token number">10</span><spa
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xcl236.github.io/xcl236/6bcf31ac.html">https://xcl236.github.io/xcl236/6bcf31ac.html</a>
+                    <a href="https://xcl236.github.io/xcl236/4bcf81ad.html">https://xcl236.github.io/xcl236/4bcf81ad.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -707,16 +650,17 @@ a <span class="token operator">=</span> <span class="token number">10</span><spa
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/xcl236/e644b45d.html">
+                <a href="/xcl236/4bcf81ad.html">
                     <div class="card-image">
                         
-                        <img src="https://z3.ax1x.com/2021/11/11/IwarY4.jpg" class="responsive-img" alt="网络是开启计算机知识之门的金钥匙">
+                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="交换机设置远程登陆密码">
                         
-                        <span class="card-title">网络是开启计算机知识之门的金钥匙</span>
+                        <span class="card-title">交换机设置远程登陆密码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -726,9 +670,9 @@ a <span class="token operator">=</span> <span class="token number">10</span><spa
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -737,6 +681,7 @@ a <span class="token operator">=</span> <span class="token number">10</span><spa
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -747,12 +692,12 @@ a <span class="token operator">=</span> <span class="token number">10</span><spa
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/xcl236/f29d1d08.html">
+                <a href="/xcl236/6bcf81ad.html">
                     <div class="card-image">
                         
-                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="计算机基础题">
+                        <img src="https://z3.ax1x.com/2021/11/11/IwaOnP.jpg" class="responsive-img" alt="交换机的初始化和基本配置">
                         
-                        <span class="card-title">计算机基础题</span>
+                        <span class="card-title">交换机的初始化和基本配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
