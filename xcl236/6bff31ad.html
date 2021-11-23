@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="交换机设置远程登陆密码, 夏承磊">
+    <meta name="keywords" content="telnet的配置, 夏承磊">
     <meta name="description" content="
-Switch&gt;en      //进入特权模式
-Switch#conf t    //进入全局模式
-Switch(config)#int vlan 1      //进入 vlan 1
-Switch(config-if)#no shu  ">
+sw1的配置
+&amp;lt;Huawei&gt;language-mode Chinese 
+Change language mode, confirm? [Y/N] y
+Nov 23 2021 13:49:30-08:00 Huawei %%01C">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@ Switch(config-if)#no shu  ">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>交换机设置远程登陆密码 | 夏承磊</title>
+    <title>telnet的配置 | 夏承磊</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -220,12 +220,12 @@ Switch(config-if)#no shu  ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://z3.ax1x.com/2021/11/11/IwaOnP.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://z3.ax1x.com/2021/11/11/IwarY4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">交换机设置远程登陆密码</h1>
+                    <h1 class="description center-align post-title">telnet的配置</h1>
                 </div>
             </div>
         </div>
@@ -360,21 +360,21 @@ Switch(config-if)#no shu  ">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-18
+                    2021-11-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    216
+                    783
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -394,29 +394,100 @@ Switch(config-if)#no shu  ">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IIHgT1"><img src="https://z3.ax1x.com/2021/11/18/IIHgT1.png" alt="交换机远程登陆.png"></a></p>
-<pre class="line-numbers language-bash"><code class="language-bash">Switch<span class="token operator">></span>en      //进入特权模式
-Switch<span class="token comment" spellcheck="true">#conf t    //进入全局模式</span>
-Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#int vlan 1      //进入 vlan 1</span>
-Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#no shu  //开启</span>
-%LINK-5-CHANGED: Interface Vlan1, changed state to up
+                <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/opUcUx"><img src="https://z3.ax1x.com/2021/11/23/opUcUx.png" alt="telnet.png"></a></p>
+<pre class="line-numbers language-bash"><code class="language-bash">sw1的配置
+<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>language-mode Chinese 
+Change language mode, confirm? <span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span> y
+Nov 23 2021 13:49:30-08:00 Huawei %%01CMD/4/LAN_MODE<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">[</span>0<span class="token punctuation">]</span>:The user chose Y when
+ deciding whether to change the language mode.
+提示：改变语言模式成功。
+<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>sys
+进入系统视图，键入Ctrl+Z退回到用户视图。
+<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>undo info-center <span class="token function">enable</span> 
+提示：信息中心被关闭。    
+<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>sysname sw1          //改名为sw1
+<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>vlan 2                  //创建vlan2
+<span class="token punctuation">[</span>sw1-vlan2<span class="token punctuation">]</span>q    
+<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>interface Vlanif 2    
+<span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>ip address 192.168.1.1 24    //配置ip地址和子网掩码
+<span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>int g0/0/1                 //进入0/0/1这个端口
+<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port link-type trunk      //设置为trunk模式     
+<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk pvid vlan 2    //设置端口的默认vlan标签    
+<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk allow-pass vlan all
+<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>q    
+<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>user-interface vty 0 4         //进入虚拟用户终端接口
+<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>authentication-mode password     //设置认证模式为密码验证
+<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>set authentication password cipher pikaq        //设置密码为密文格式:“pikaq”
+<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>user privilege level 3        //设置用户权限等级为3
+//华为user，privilege，level 3级别含义：交换机有4级别，0123 0参观，1监控，2系统，3管理，（所有命令
+<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>q
+<span class="token operator">&lt;</span>sw1<span class="token operator">></span>save
+将把当前的配置保存到存储设备中。
+是否继续？<span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span>y
+提示：请输入文件名（*.cfg，*.zip）<span class="token punctuation">[</span>vrpcfg.zip<span class="token punctuation">]</span>：
+正在将运行时的配置写入到存储设备0。
+保存配置成功。
+<span class="token operator">&lt;</span>sw1<span class="token operator">></span>
 
-%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">sw2的配置
+<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>language-mode Chinese 
+Change language mode, confirm? <span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span> y
+Nov 23 2021 13:54:49-08:00 Huawei %%01CMD/4/LAN_MODE<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">[</span>0<span class="token punctuation">]</span>:The user chose Y when
+ deciding whether to change the language mode.
+提示：改变语言模式成功。
+<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>sys
+进入系统视图，键入Ctrl+Z退回到用户视图。    
+<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>undo info-center <span class="token function">enable</span> 
+提示：信息中心被关闭。    
+<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>sysname sw2           //改名为sw2
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>vlan 2                   //创建vlan2
+<span class="token punctuation">[</span>sw2-vlan2<span class="token punctuation">]</span>q    
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>interface Vlanif 2
+<span class="token punctuation">[</span>sw2-Vlanif2<span class="token punctuation">]</span>ip address 192.168.1.2 24     //配置ip地址和子网掩码
+<span class="token punctuation">[</span>sw2-Vlanif2<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>int g0/0/1         //进入0/0/1这个端口
+<span class="token punctuation">[</span>sw2-GigabitEthernet0/0/1<span class="token punctuation">]</span>port link-type trunk         //设置为trunk模式 
+<span class="token punctuation">[</span>sw2-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk pvid vlan 2     //设置端口的默认vlan标签
+<span class="token punctuation">[</span>sw2-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk allow-pass vlan all
+<span class="token punctuation">[</span>sw2-GigabitEthernet0/0/1<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>user-interface vty 0 4            //进入虚拟用户终端接口
+<span class="token punctuation">[</span>sw2-ui-vty0-4<span class="token punctuation">]</span>authentication-mode aaa
+<span class="token punctuation">[</span>sw2-ui-vty0-4<span class="token punctuation">]</span>user privilege level 3     //设置用户权限等级为3
+<span class="token punctuation">[</span>sw2-ui-vty0-4<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>aaa
+<span class="token punctuation">[</span>sw2-aaa<span class="token punctuation">]</span>local-user pikaq password cipher fdbzxc privilege level 3
+提示：添加了一个新用户。<span class="token punctuation">(</span>用户名：pikaq，密码：fdbzxc） （用户名密码可改动）    
+<span class="token punctuation">[</span>sw2-aaa<span class="token punctuation">]</span>local-user pikaq service-type telnet 
+<span class="token punctuation">[</span>sw2-aaa<span class="token punctuation">]</span>q
+<span class="token punctuation">[</span>sw2<span class="token punctuation">]</span>q
+<span class="token operator">&lt;</span>sw2<span class="token operator">></span>save
+将把当前的配置保存到存储设备中。
+是否继续？<span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span>y
+提示：请输入文件名（*.cfg，*.zip）<span class="token punctuation">[</span>vrpcfg.zip<span class="token punctuation">]</span>：
+正在将运行时的配置写入到存储设备0。
+保存配置成功。
+<span class="token operator">&lt;</span>sw2<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">测试
+<span class="token operator">&lt;</span>sw1<span class="token operator">></span>telnet 192.168.1.2
+连接 192.168.1.2 <span class="token punctuation">..</span>.
+按CTRL+K键终止连接
+成功连接到 192.168.1.2 …
 
-Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#ip address 192.168.1.254 255.255.255.0    //配置IP地址和子网掩码</span>
-Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#exit   //退回全局模式</span>
-Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#line vty 0 4   //为telnet用户设置0~4共5条线路</span>
-Switch<span class="token punctuation">(</span>config-line<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#login local   //设置本地登陆</span>
-Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#username xcl password 123  //设置本地账户名和密码</span>
-Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#enable password 222    //设置进入特权模式的明文密码为222</span>
-Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#enable secret 333     设置进入特权模式的加密密码为333</span>
-验证在命令提示符下输入telnet 192.168.1.254
-Username:         （输入用户名<span class="token punctuation">)</span>
-Password:         （输入用户名密码）
-Switch<span class="token operator">></span>en
-Password:          （输入进入特权模式的密码）
-Switch<span class="token comment" spellcheck="true">#             </span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+Login authentication
+
+
+Username:pikaq
+Password:
+Info: The max number of VTY <span class="token function">users</span> is 5, and the number
+      of current VTY <span class="token function">users</span> on line is 1.
+      The current login <span class="token function">time</span> is 2021-11-23 14:00:11.
+<span class="token operator">&lt;</span>sw2<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -443,7 +514,7 @@ Switch<span class="token comment" spellcheck="true">#             </span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xcl236.github.io/xcl236/4bcf81ad.html">https://xcl236.github.io/xcl236/4bcf81ad.html</a>
+                    <a href="https://xcl236.github.io/xcl236/6bff31ad.html">https://xcl236.github.io/xcl236/6bff31ad.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,9 +595,47 @@ Switch<span class="token comment" spellcheck="true">#             </span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/xcl236/6bff31ad.html">
+                    <div class="card-image">
+                        
+                        <img src="https://z3.ax1x.com/2021/11/11/IwarY4.jpg" class="responsive-img" alt="telnet的配置">
+                        
+                        <span class="card-title">telnet的配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            xcl236
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/xcl236/6bcf81ad.html">
                     <div class="card-image">
@@ -543,9 +652,9 @@ Switch<span class="token comment" spellcheck="true">#             </span>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -553,58 +662,6 @@ Switch<span class="token comment" spellcheck="true">#             </span>
                             
                         </span>
                     </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/xcl236/1d3cd17c.html">
-                    <div class="card-image">
-                        
-                        <img src="https://z3.ax1x.com/2021/11/11/IwarY4.jpg" class="responsive-img" alt=".....">
-                        
-                        <span class="card-title">.....</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-23
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%88%86%E7%B1%BB/" class="post-category">
-                                    分类
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
-                        <span class="chip bg-color">计算机</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">
-                        <span class="chip bg-color">练习题</span>
-                    </a>
-                    
                 </div>
                 
             </div>
